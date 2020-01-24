@@ -1,7 +1,7 @@
 $mobile: 990px;
 
-@mixin mobile {
-  @media (max-width: #{$mobile}){
+@mixin tablet {
+  @media (max-width: #{$tablet}){
     @content;
   }
 }
@@ -18,7 +18,7 @@ main{
   align-items: center;
   justify-content: center;
 
-  @include mobile{
+  @include tablet{
     grid-template-areas:
     "basic"
     "prof"
@@ -36,8 +36,9 @@ h3{
   padding:10px;
   box-shadow:0px 12px 65px -30px #001F54;
 
-  @include mobile{
+  @include tablet{
     margin:20px 0;
+    width:400px;
   }
 
   h3{
@@ -46,7 +47,7 @@ h3{
   }
 
   p{
-    padding:15px 0;
+    padding:20px 0;
     font-size: 0.9em;
     color:$dark;
     word-spacing:2px;
@@ -57,7 +58,7 @@ h3{
     opacity: 0.4;
     margin:0 auto;
 
-    @include mobile{
+    @include tablet{
       width:85%;
       padding:0 5px;
     }

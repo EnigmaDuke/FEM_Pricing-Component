@@ -36,6 +36,7 @@ h3 {
 @media (max-width: 990px) {
   .container {
     margin: 20px 0;
+    width: 400px;
   }
 }
 
@@ -45,7 +46,7 @@ h3 {
 }
 
 .container p {
-  padding: 15px 0;
+  padding: 20px 0;
   font-size: 0.9em;
   color: #001F54;
   word-spacing: 2px;
