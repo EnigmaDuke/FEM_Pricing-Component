@@ -33,11 +33,14 @@ main {
 }
 
 .container h3 {
-  padding: 15px 0;
+  padding: 15px 0 0 0;
+  color: #001F54;
 }
 
 .container p {
   padding: 15px 0;
+  font-size: 0.9em;
+  color: #001F54;
 }
 
 .container hr {
@@ -46,9 +49,23 @@ main {
 }
 
 .container button {
-  padding: 10px;
+  padding: 12px 10px;
   border-radius: 5px;
-  margin: 15px 0;
+  margin: 20px 0;
+  border: none;
+}
+
+.container .price {
+  font-size: 3em;
+  font-weight: 700;
+  color: #001F54;
+}
+
+.container .price .dollar_Sign {
+  font-size: 0.6em;
+  position: relative;
+  bottom: 7px;
+  padding: 3px;
 }
 
 #basic {
@@ -63,7 +80,11 @@ main {
   -ms-grid-column: 2;
   grid-area: prof;
   background-color: #034078;
-  padding: 40px 0;
+  padding: 35px 0;
+  color: #ECF8F8;
+}
+
+#professional p, #professional h3 {
   color: #ECF8F8;
 }
 
@@ -77,6 +98,10 @@ main {
 * {
   margin: 0;
   padding: 0;
+}
+
+p {
+  font-family: Helvetica, sans-serif;
 }
 
 header {
@@ -123,7 +148,6 @@ h1 {
   opacity: 0.7;
   font-size: 1.1em;
   padding: 0 15px;
-  font-family: Helvetica, sans-serif;
 }
 
 #title_Container #toggle .switch {

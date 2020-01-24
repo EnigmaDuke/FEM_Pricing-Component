@@ -28,11 +28,14 @@ main{
   @include center;
 
   h3{
-    padding:15px 0;
+    padding:15px 0 0 0;
+    color:$dark;
   }
 
   p{
     padding:15px 0;
+    font-size: 0.9em;
+    color:$dark;
   }
 
   hr{
@@ -41,9 +44,23 @@ main{
   }
 
   button{
-    padding:10px;
+    padding:12px 10px;
     border-radius: 5px;
-    margin:15px 0;
+    margin:20px 0;
+    border:none;
+  }
+
+  .price{
+    font-size:3em;
+    font-weight:700;
+    color:$dark;
+  
+    .dollar_Sign{
+      font-size:0.6em;
+      position: relative;
+      bottom:7px;
+      padding:3px;
+    }
   }
 }
 
@@ -55,8 +72,14 @@ main{
 #professional{
   grid-area: prof;
   background-color: bkgColor($bodyDark);
-  padding:40px 0;
+  padding:35px 0;
   color:$body;
+
+  p, h3{
+    color:$body;
+  }
+
+
 }
 
 #master{
