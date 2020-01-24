@@ -17,6 +17,10 @@ header{
   width:100%;
   position: relative;
   text-align: center;
+
+  @include mobile{
+    height:100%;
+  }
 }
 
 h1{

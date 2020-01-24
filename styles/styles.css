@@ -33,6 +33,12 @@ h3 {
           box-shadow: 0px 12px 65px -30px #001F54;
 }
 
+@media (max-width: 990px) {
+  .container {
+    margin: 20px 0;
+  }
+}
+
 .container h3 {
   padding: 15px 0 0 0;
   color: #001F54;
@@ -48,6 +54,14 @@ h3 {
 .container hr {
   width: 250px;
   opacity: 0.4;
+  margin: 0 auto;
+}
+
+@media (max-width: 990px) {
+  .container hr {
+    width: 85%;
+    padding: 0 5px;
+  }
 }
 
 .container button {
@@ -139,6 +153,12 @@ header {
   width: 100%;
   position: relative;
   text-align: center;
+}
+
+@media (max-width: 990px) {
+  header {
+    height: 100%;
+  }
 }
 
 h1 {
