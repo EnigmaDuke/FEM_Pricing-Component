@@ -4,6 +4,7 @@
 *{
   margin:0;
   padding:0;
+  box-sizing: border-box;
 }
 
 p{
@@ -15,7 +16,7 @@ header{
   height:100vh;
   width:100%;
   position: relative;
-  @include center;
+  text-align: center;
 }
 
 h1{
@@ -32,6 +33,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 50px;
 
     p{
       color:$dark;
@@ -91,6 +93,10 @@ h1{
     }
   }
 }
+
+
+
+
 
 
 

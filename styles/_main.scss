@@ -1,35 +1,40 @@
+$mobile: 990px;
+
+@mixin mobile {
+  @media (max-width: #{$mobile}){
+    @content;
+  }
+}
 
 @function bkgColor($clr){
   @return $clr;
 }
 
-@mixin center{
-  display: grid;
-  align-items:center;
-  justify-content: center;
-  text-align: center;
-}
-
 main{
-  width:100vh;
+  width:100%;
   margin:0 auto;
   display: grid;
   grid-template-areas: "basic prof master";
   align-items: center;
   justify-content: center;
+
+  @include mobile{
+    grid-template-areas:
+    "basic"
+    "prof"
+    "master";
+  }
 }
 
 h3{
   letter-spacing: 1px;
 }
 
-
 .container{
   width:300px;
   border-radius: 5px;
   padding:10px;
   box-shadow:0px 12px 65px -30px #001F54;
-  @include center;
 
   h3{
     padding:15px 0 0 0;
@@ -49,17 +54,16 @@ h3{
   }
 
   button{
-    padding:12px 10px;
+    padding:12px 70px;
     border-radius: 5px;
     margin:20px 0;
-    background-image: linear-gradient(180deg, $bodyDark, $dark);
+    background-color:$dark;
     color:$body;
     cursor: pointer;
     transition: background-color .4s;
     font-weight: 700;
     letter-spacing: 1px;
   }
-
 
   button:hover{
     background-image: none;
@@ -89,7 +93,6 @@ h3{
 
 #professional{
   grid-area: prof;
-  // background-color: bkgColor($bodyDark);
   background-image: linear-gradient(45deg, $bodyDark, $dark);
   padding:35px 0;
   color:$body;
@@ -105,8 +108,6 @@ h3{
   }
 
   button:hover{
-    // background-image: none;
-    // background-color: $dark;
     background-image: linear-gradient(45deg, $bodyDark, $dark);
     border-color: $body;
     color:$body;
