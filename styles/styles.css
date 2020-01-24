@@ -15,6 +15,10 @@ main {
           justify-content: center;
 }
 
+h3 {
+  letter-spacing: 1px;
+}
+
 .container {
   width: 300px;
   border-radius: 5px;
@@ -41,6 +45,7 @@ main {
   padding: 15px 0;
   font-size: 0.9em;
   color: #001F54;
+  word-spacing: 2px;
 }
 
 .container hr {
@@ -52,7 +57,21 @@ main {
   padding: 12px 10px;
   border-radius: 5px;
   margin: 20px 0;
-  border: none;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#034078), to(#001F54));
+  background-image: linear-gradient(180deg, #034078, #001F54);
+  color: #ECF8F8;
+  cursor: pointer;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.container button:hover {
+  background-image: none;
+  background-color: #ECF8F8;
+  border-color: #034078;
+  color: #034078;
 }
 
 .container .price {
@@ -79,12 +98,24 @@ main {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: prof;
-  background-color: #034078;
+  background-image: linear-gradient(45deg, #034078, #001F54);
   padding: 35px 0;
   color: #ECF8F8;
 }
 
 #professional p, #professional h3 {
+  color: #ECF8F8;
+}
+
+#professional button {
+  background-image: none;
+  background-color: #ECF8F8;
+  color: #001F54;
+}
+
+#professional button:hover {
+  background-image: linear-gradient(45deg, #034078, #001F54);
+  border-color: #ECF8F8;
   color: #ECF8F8;
 }
 

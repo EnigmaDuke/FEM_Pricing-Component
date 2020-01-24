@@ -19,6 +19,10 @@ main{
   justify-content: center;
 }
 
+h3{
+  letter-spacing: 1px;
+}
+
 
 .container{
   width:300px;
@@ -36,6 +40,7 @@ main{
     padding:15px 0;
     font-size: 0.9em;
     color:$dark;
+    word-spacing:2px;
   }
 
   hr{
@@ -47,7 +52,20 @@ main{
     padding:12px 10px;
     border-radius: 5px;
     margin:20px 0;
-    border:none;
+    background-image: linear-gradient(180deg, $bodyDark, $dark);
+    color:$body;
+    cursor: pointer;
+    transition: background-color .4s;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+
+  button:hover{
+    background-image: none;
+    background-color: $body;
+    border-color: $bodyDark;
+    color:$bodyDark;
   }
 
   .price{
@@ -71,7 +89,8 @@ main{
 
 #professional{
   grid-area: prof;
-  background-color: bkgColor($bodyDark);
+  // background-color: bkgColor($bodyDark);
+  background-image: linear-gradient(45deg, $bodyDark, $dark);
   padding:35px 0;
   color:$body;
 
@@ -79,7 +98,19 @@ main{
     color:$body;
   }
 
+  button{
+    background-image:none;
+    background-color:$body;
+    color:$dark;
+  }
 
+  button:hover{
+    // background-image: none;
+    // background-color: $dark;
+    background-image: linear-gradient(45deg, $bodyDark, $dark);
+    border-color: $body;
+    color:$body;
+  }
 }
 
 #master{
