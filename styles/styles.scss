@@ -10,8 +10,8 @@ header{
   background-color:$bkg;
   height:100vh;
   width:100%;
-  // display: grid;
   position: relative;
+  @include center;
 }
 
 h1{
@@ -30,7 +30,8 @@ h1{
     align-items: center;
 
     p{
-      color:$text;
+      color:$dark;
+      opacity: 0.7;
       font-size:1.1em;
       padding:0 15px;
       font-family: $content;
@@ -57,7 +58,7 @@ h1{
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: $light;
+      background-color: $body;
       transition: .4s;
     }
 
