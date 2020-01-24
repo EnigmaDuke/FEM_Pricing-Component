@@ -1,0 +1,19 @@
+main{
+  display: grid;
+  grid-template-areas: "basic prof master";
+}
+
+#basic{
+  grid-area: basic;
+}
+
+#professional{
+  grid-area: prof;
+}
+
+#master{
+  grid-area: master;
+}
+
+
+
